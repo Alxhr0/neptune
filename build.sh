@@ -14,7 +14,7 @@ RELEASE="$(rpm -E %fedora)"
 wget https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-40/solopasha-hyprland-fedora-40.repo -O /etc/yum.repos.d/solopasha-hyprland-fedora-40.repo
 
 # this installs a package from fedora repos
-rpm-ostree install qemu virt-manager rpm-devel tmate merkuro
+rpm-ostree install qemu virt-manager rpm-devel tmate merkuro VirtualBox
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
