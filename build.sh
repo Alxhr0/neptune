@@ -12,12 +12,10 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 wget https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-40/solopasha-hyprland-fedora-40.repo -O /etc/yum.repos.d/solopasha-hyprland-fedora-40.repo
-wget https://copr.fedorainfracloud.org/coprs/whitehara/kernel-tkg-zen2/repo/fedora-40/whitehara-kernel-tkg-zen2-fedora-40.repo -O /etc/yum.repos.d/whitehara-kernel-tkg-zen2-fedora-40.repo
+wget https://download.opensuse.org/repositories/home:Alxhr0/Fedora_40/home:Alxhr0.repo -O /etc/yum.repos.d/home:Alxhr0.repo
 
 # this installs a package from fedora repos
-rpm-ostree install qemu virt-manager rpm-devel tmate merkuro
-
-rpm-ostree override replace --experimental --from repo='copr:copr.fedorainfracloud.org:whitehara:kernel-tkg-zen2' kernel kernel-core kernel-modules kernel-modules-core kernel-modules-extra
+rpm-ostree install qemu virt-manager rpm-devel tmate merkuro kf6-servicemenus-imagetools
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
