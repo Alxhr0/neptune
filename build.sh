@@ -12,6 +12,7 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 wget https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-40/solopasha-hyprland-fedora-40.repo -O /etc/yum.repos.d/solopasha-hyprland-fedora-40.repo
+wget https://copr.fedorainfracloud.org/coprs/whitehara/kernel-tkg-zen2/repo/fedora-40/whitehara-kernel-tkg-zen2-fedora-40.repo -o /etc/yum.repos.d/whitehara-kernel-tkg-zen2-fedora-40.repo
 
 # this installs a package from fedora repos
 rpm-ostree install qemu virt-manager rpm-devel tmate merkuro
