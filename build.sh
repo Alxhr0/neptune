@@ -16,6 +16,8 @@ wget https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-40/s
 # this installs a package from fedora repos
 rpm-ostree install qemu virt-manager rpm-devel tmate merkuro
 
+rpm-ostree override replace --experimental --from repo='copr:copr.fedorainfracloud.org:whitehara:kernel-tkg-zen2' kernel kernel-core kernel-modules kernel-modules-core kernel-modules-extra
+
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
